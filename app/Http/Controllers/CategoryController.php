@@ -41,7 +41,10 @@ class CategoryController extends Controller
      */
     public function store(StoreCategoryRequest $request)
     {
-        //
+        $category = new Category;
+        $category->name = $request->name;
+        $category->save();
+        return redirect()->route("categories.index");
     }
 
     /**
