@@ -45,6 +45,9 @@
                             @endforeach
                         </tbody>
                     </table>
+                    <div class="w-2/4 m-auto mt-2">
+                        {{ $categories->links() }}
+                    </div>
                 </div>
             </div>
         </div>
